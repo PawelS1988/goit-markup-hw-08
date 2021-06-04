@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+.logo__accent-text {
+  color: #2196f3;
+}

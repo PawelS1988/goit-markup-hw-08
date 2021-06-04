@@ -1,0 +1,39 @@
+.whatwedo__list {
+  display: flex;
+  position: relative;
+}
+
+.whatwedo__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.whatwedo__img {
+  margin-bottom: 94px;
+}
+
+.whatwedo__description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 94px;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  opacity: 1;
+}

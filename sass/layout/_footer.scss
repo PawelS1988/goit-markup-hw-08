@@ -1,0 +1,73 @@
+.footer {
+  background: #2f303a;
+}
+
+.footer-logo {
+  padding-top: 60px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.address {
+  display: flex;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.address__list {
+  list-style: none;
+}
+
+.address__item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__par {
+  padding-top: 20px;
+  padding-bottom: 9px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.address__email {
+  text-decoration-line: underline;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__phonenumber {
+  color: rgba(255, 255, 255, 0.6);
+
+  &:link,
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
