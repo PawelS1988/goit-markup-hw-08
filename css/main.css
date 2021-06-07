@@ -720,7 +720,6 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .team {
     justify-content: center;
-    width: 100%;
   }
 }
 
@@ -729,7 +728,10 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+  }
+  .ourteam__member:nth-child(2n + 1) {
+    margin-right: 30px;
   }
 }
 
