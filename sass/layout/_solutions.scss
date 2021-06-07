@@ -1,29 +1,97 @@
-.solutions {
-  padding-top: 200px;
-  padding-bottom: 280px;
-  background: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/SolutionsBCKG.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .solutions__description {
   margin-bottom: 30px;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/solutions/solutions-bg-mobile@2x.jpg);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .solutions {
+    padding-top: 118px;
+    padding-bottom: 198px;
+    background: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/solutions/solutions-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .button-index {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .solutions {
+    padding-top: 118px;
+    padding-bottom: 198px;
+    background: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/solutions/slutions-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .button-index {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .solutions {
+    padding-top: 200px;
+    padding-bottom: 280px;
+    background: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/solutions/slutions-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .button-index {
+    margin: auto;
+  }
+
+  .solutions__description {
+    font-size: 44px;
+    line-height: 1.364;
+  }
+}
+
+// .solutions {
+//   padding-top: 200px;
+//   padding-bottom: 280px;
+//   background: #2f303a;
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../images/SolutionsBCKG.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }

@@ -12,6 +12,14 @@
 :root {
   --main-font: font-family: 'Roboto', sans-serif;
   --secondary-font: font-family: 'Raleway', sans-serif;
+  --color-blue: #2196f3;
+  --color-white:#ffffff;
+  --color-whiteb:#f5f4fa;
+  --color-black:#000000;
+  --color-blackb:#212121;
+  --color-grey:#757575;
+  --color-greyb:#afb1b8;
+  --color-greyc:#2f303a;
 }
 
 h1,
@@ -47,51 +55,35 @@ img {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  align-items: center;
-  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 10px;
 }
 
-.header .container,
-.pros .container,
-.filters .container,
-.container .portfolio {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 }
 
-.ourclients .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 15px;
+  }
 }
 
-.solutions .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.team .ourteam .container {
-  display: flex;
-}
-
-.whatwedo .whatwedo-div .container {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
 }
 
 .section {
   padding-top: 130px;
   padding-bottom: 130px;
-}
-
-body {
-  width: 1600px;
-  height: 1880px;
-  margin: auto;
 }
 
 .backdrop {
@@ -295,11 +287,11 @@ body {
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
-  background: #2196f3;
+  background: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .button-index:hover {
@@ -499,46 +491,85 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.solutions {
-  padding-top: 200px;
-  padding-bottom: 280px;
-  background: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/SolutionsBCKG.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .solutions__description {
   margin-bottom: 30px;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/solutions/solutions-bg-mobile@2x.jpg);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .solutions {
+    padding-top: 118px;
+    padding-bottom: 198px;
+    background: #2f303a;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/solutions/solutions-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .button-index {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .solutions {
+    padding-top: 118px;
+    padding-bottom: 198px;
+    background: #2f303a;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/solutions/slutions-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .button-index {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .solutions {
+    padding-top: 200px;
+    padding-bottom: 280px;
+    background: #2f303a;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/solutions/slutions-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .button-index {
+    margin: auto;
+  }
+  .solutions__description {
+    font-size: 44px;
+    line-height: 1.364;
+  }
+}
+
 .pros__list {
   display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 94px;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .pros__box {
   display: flex;
+  flex-grow: 1;
+  height: 120px;
   align-items: center;
   justify-content: center;
-  width: 270px;
-  height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -555,9 +586,11 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.143;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #212121;
 }
 
 .pros__description {
@@ -568,7 +601,24 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-  width: 270px;
+}
+
+.pros__description:not(last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .pros__box {
+    width: 354px;
+  }
+  .pros__description {
+    width: 354px;
+  }
+  .pros__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .whatwedo__list {
@@ -611,23 +661,36 @@ body {
   opacity: 1;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .whatwedo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .whatwedo {
+    display: none;
+  }
+}
+
 .team {
   background: #f5f4fa;
+  display: flex;
+  justify-content: center;
 }
 
 .ourteam__list {
-  display: flex;
-  padding-bottom: 94px;
-}
-
-.ourteam__item:not(:last-child) {
-  margin-right: 30px;
+  padding-bottom: 60px;
 }
 
 .ourteam__member {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.ourteam__member:not(last-child) {
+  margin-bottom: 30px;
 }
 
 .ourteam__name {
@@ -653,6 +716,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .ourteam__member {
+    flex-grow: 1;
+  }
 }
 
 .ourclients__icon {

@@ -37,3 +37,18 @@
   background-color: rgba(47, 48, 58, 0.8);
   opacity: 1;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .whatwedo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .whatwedo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}

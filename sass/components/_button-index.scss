@@ -8,11 +8,11 @@
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
-  background: #2196f3;
+  background: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  color: #ffffff;
+  color: var(--color-white);
 
   &:hover {
     cursor: pointer;

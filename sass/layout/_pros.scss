@@ -1,17 +1,16 @@
 .pros__list {
   display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 94px;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .pros__box {
   display: flex;
+  flex-grow: 1;
+  height: 120px;
   align-items: center;
   justify-content: center;
-  width: 270px;
-  height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -28,9 +27,11 @@
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.143;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #212121;
 }
 
 .pros__description {
@@ -41,5 +42,73 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-  width: 270px;
+  &:not(last-child) {
+    margin-bottom: 30px;
+  }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .pros__box {
+    width: 354px;
+  }
+  .pros__description {
+    width: 354px;
+  }
+  .pros__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+// .pros__list {
+//   display: flex;
+//   flex-grow: 1;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding-top: 94px;
+// }
+
+// .pros__box {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 270px;
+//   height: 120px;
+//   background: #f5f4fa;
+//   border-radius: 4px;
+//   margin-bottom: 30px;
+// }
+
+// .pros__icon {
+//   width: 70px;
+//   height: 70px;
+// }
+
+// .pros__title {
+//   padding-bottom: 10px;
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 14px;
+//   line-height: 16px;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }
+
+// .pros__description {
+//   font-family: Roboto;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 14px;
+//   line-height: 24px;
+//   letter-spacing: 0.03em;
+//   color: #757575;
+//   width: 270px;
+// }

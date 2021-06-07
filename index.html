@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="container">
       <section class="topline">
         <a class="logo" href="./index.html"><span class="logo__accent-text">Web</span>Studio</a>
@@ -47,13 +47,13 @@
         </div>
       </section>
     </div>
-  </header>
+  </header> -->
 
   <main>
     <section class="solutions">
       <div class="container">
         <p class="solutions__description">
-          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU
         </p>
         <button type="button" class="button-index" data-modal-open>Zamów usługę</button>
       </div>
@@ -147,8 +147,34 @@
           <ul class="ourteam__list list">
             <li class="ourteam__item">
               <div class="ourteam__member">
+                <picture>
+                  <source 
+                  srcset="./images/team/johndoe1-mobile.jpg 1x ./images/team/johndoe1-mobile@2x.jpg 2x"
+                  media="(min-width: 480px)">
+                </source>
+                  <source 
+                  srcset="./images/team/johndoe1-mobile.jpg 1x ./images/team/johndoe1-mobile@2x.jpg 2x"
+                  media="(min-width: 480px)" type="image/webp">
+                </source>
+                  <source 
+                  srcset="./images/team/johndoe1-tablet.jpg 1x ./images/team/johndoe1-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)">
+                </source>
+                  <source 
+                  srcset="./images/team/johndoe1-tablet.jpg 1x ./images/team/johndoe1-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                </source>
+                  <source 
+                  srcset="./images/team/johndoe1-desktop.jpg 1x ./images/team/johndoe1-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                </source>
+                  <source 
+                  srcset="./images/team/johndoe1-desktop.jpg 1x ./images/team/johndoe1-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                </source>
                 <img src="https://github.com/PawelS1988/goit-markup-hw-01/blob/main/images/JohnDoe1op.jpg?raw=true"
                   alt="JohnDoe1" width="270" height="260" />
+                  </picture>
                 <p class="ourteam__name">John Doe</p>
                 <p class="ourteam__position">Product designer</p>
                 <ul class="social-list list">
@@ -286,7 +312,7 @@
       </div>
     </section>
     </section>
-    <section class="ourclients">
+    <!-- <section class="ourclients">
       <div class="container">
         <h2 class="title2">Nasi Klienci</h2>
         <ul class="ourclients__list list">
@@ -335,9 +361,9 @@
         </ul>
       </div>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <a class="footer-logo" href="./index.html"><span class="logo__accent-text">Web</span>Studio</a>
       <address class="address">
@@ -391,9 +417,9 @@
         </div>
       </address>
     </div>
-  </footer>
+  </footer> -->
 
-  <div class="backdrop is-hidden" data-modal>
+  <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="button-close" data-modal-close></button>
       <form method="post" class="modal__form">
@@ -426,7 +452,7 @@
         </div>
       </form>
     </div>
-  </div>
+  </div> -->
 
   <script src="./js/modal.js"></script>
 
