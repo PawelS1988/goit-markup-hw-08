@@ -54,11 +54,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .ourteam__member {
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
-    }
+    justify-content: space-between;
   }
 }
 

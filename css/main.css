@@ -729,9 +729,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .ourteam__member:nth-child(2n + 1) {
-    margin-right: 30px;
+    justify-content: space-between;
   }
 }
 
@@ -742,7 +740,6 @@ img {
 
 .ourclients__list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .ourclients__link {
@@ -766,10 +763,16 @@ img {
   .ourclients__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 60px;
   }
   .ourclients__link {
     width: 210px;
     height: 92px;
+    margin-bottom: 30px;
+  }
+  .ourclients__link:nth-child(5):nth-child(6) {
+    margin-bottom: none;
   }
 }
 
@@ -777,10 +780,15 @@ img {
   .ourclients__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 60px;
   }
   .ourclients__link {
     width: 226px;
     height: 92px;
+  }
+  .ourclients__link:nth-child(1) {
+    margin-bottom: 30px;
   }
 }
 
@@ -807,13 +815,7 @@ img {
 }
 
 .address {
-  display: flex;
   padding-bottom: 60px;
-  flex-wrap: wrap;
-}
-
-.address__list {
-  list-style: none;
 }
 
 .address__item {
@@ -852,11 +854,18 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .joinus {
   width: 206px;
   height: 80px;
-  margin-left: 70px;
-  margin-top: -23px;
 }
 
 .joinus__title {
@@ -873,7 +882,6 @@ img {
 
 .joinus__list {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -900,11 +908,15 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .joinus {
+    margin: auto;
+  }
+}
+
 .subscribe {
-  width: 570px;
+  width: 450px;
   height: 86px;
-  margin-left: 77px;
-  margin-top: -23px;
 }
 
 .subscribe__title {
@@ -923,7 +935,6 @@ img {
   min-width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: transparent;
@@ -932,16 +943,15 @@ img {
 
 .subscribe__form {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
 }
 
 .button-subscribe {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 42px;
-  padding-right: 76px;
+  padding-left: 40px;
+  padding-right: 74px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -965,6 +975,16 @@ img {
   background-image: url(../images/send.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
+  .button-subscribe {
+    width: 200px;
+    height: 50px;
+  }
 }
 
 .filters__list {

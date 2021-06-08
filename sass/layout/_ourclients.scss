@@ -5,7 +5,6 @@
 
 .ourclients__list {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .ourclients__link {
@@ -30,11 +29,17 @@
   .ourclients__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 60px;
   }
 
   .ourclients__link {
     width: 210px;
     height: 92px;
+    margin-bottom: 30px;
+    &:nth-child(5):nth-child(6) {
+      margin-bottom: none;
+    }
   }
 }
 
@@ -42,10 +47,15 @@
   .ourclients__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 60px;
   }
   .ourclients__link {
     width: 226px;
     height: 92px;
+    &:nth-child(1) {
+      margin-bottom: 30px;
+    }
   }
 }
 
