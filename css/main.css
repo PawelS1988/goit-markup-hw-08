@@ -815,7 +815,7 @@ img {
 }
 
 .address {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .address__item {
@@ -860,6 +860,24 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 84px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .address {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    padding-bottom: 84px;
+    padding-left: 76px;
+  }
+  .footer-logo {
+    position: relative;
+    left: 120px;
+  }
+  .footer {
+    padding-bottom: 100px;
   }
 }
 
@@ -911,6 +929,16 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .joinus {
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .joinus {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    left: 211px;
+    top: -28px;
   }
 }
 
@@ -978,6 +1006,38 @@ img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .subscribe {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subscribe__form {
+    align-items: center;
+  }
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
+  .button-subscribe {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .subscribe {
+    position: relative;
+    left: 158px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .subscribe__form {
+    align-items: center;
+  }
   .subscribe__input {
     margin-bottom: 20px;
   }
@@ -989,10 +1049,6 @@ img {
 
 .filters__list {
   display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 94px;
-  margin-bottom: 50px;
 }
 
 .filters__item:not(:last-child) {
@@ -1000,7 +1056,6 @@ img {
 }
 
 .button-filter {
-  padding: 6px 22px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -1021,6 +1076,76 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .filters__list {
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .filters__item {
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+  .filters__item:nth-child(1) {
+    padding: 6px 13px;
+    margin-bottom: 15px;
+  }
+  .filters__item:nth-child(2) {
+    padding: 6px 39px;
+    margin-bottom: 15px;
+  }
+  .filters__item:nth-child(3) {
+    padding: 6px 37px;
+    margin-bottom: 15px;
+  }
+  .filters__item:nth-child(4) {
+    padding: 6px 28px;
+  }
+  .filters__item:nth-child(5) {
+    padding: 6px 26px;
+  }
+  .filters__item:focus, .filters__item:hover {
+    color: #ffffff;
+    background-color: #2196f3;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .filters__list {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .filters__item {
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+  .filters__item:nth-child(1) {
+    padding: 6px 13px;
+  }
+  .filters__item:nth-child(2) {
+    padding: 6px 39px;
+  }
+  .filters__item:nth-child(3) {
+    padding: 6px 37px;
+  }
+  .filters__item:nth-child(4) {
+    padding: 6px 28px;
+  }
+  .filters__item:nth-child(5) {
+    padding: 6px 26px;
+  }
+  .filters__item:focus, .filters__item:hover {
+    color: #ffffff;
+    background-color: #2196f3;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
@@ -1033,14 +1158,6 @@ img {
   display: flex;
   background: #ffffff;
   border: 1px solid #eeeeee;
-}
-
-.portfolio__item:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
-
-.portfolio__item:nth-child(n + 7) {
-  margin-bottom: 94px;
 }
 
 .portfolio__project {
@@ -1104,5 +1221,26 @@ img {
   transform: translateY(100%);
   transition: transform 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio__item {
+    margin-bottom: 30px;
+  }
+  .portfolio__item:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .portfolio__item {
+    margin-bottom: 30px;
+  }
+  .portfolio__item:last-child {
+    margin-bottom: 60px;
+  }
+  .portfolio__name {
+    font-size: 17px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
