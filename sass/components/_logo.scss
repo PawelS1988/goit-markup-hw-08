@@ -6,7 +6,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 28px;
   letter-spacing: 0.03em;
 
   &:link,
@@ -21,3 +21,40 @@
 .logo__accent-text {
   color: #2196f3;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .logo {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+// .logo {
+//   display: flex;
+//   align-items: center;
+//   text-decoration: none;
+//   font-family: Raleway;
+//   font-style: normal;
+//   font-weight: bold;
+//   font-size: 26px;
+//   line-height: 31px;
+//   letter-spacing: 0.03em;
+
+//   &:link,
+//   &:hover,
+//   &:active,
+//   &:visited {
+//     text-decoration: none;
+//     color: #000000;
+//   }
+// }
+
+// .logo__accent-text {
+//   color: #2196f3;
+// }

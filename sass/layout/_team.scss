@@ -48,7 +48,7 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .ourteam__list {
     display: flex;
     flex-direction: row;
@@ -59,6 +59,23 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .team {
+    background: #f5f4fa;
+  }
+
+  .ourteam__list {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: none;
+    justify-content: none;
+    justify-content: none;
+    padding-bottom: 94px;
+  }
+  .ourteam__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 // .team {

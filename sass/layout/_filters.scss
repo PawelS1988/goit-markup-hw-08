@@ -103,6 +103,19 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .filters__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+
+  .filters__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
 }
 
 // .filters__list {

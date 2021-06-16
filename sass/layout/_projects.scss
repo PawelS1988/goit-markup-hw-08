@@ -60,7 +60,7 @@
   align-items: center;
   padding-left: 24px;
   position: absolute;
-  width: 370px;
+  width: 450px;
   height: 294px;
   font-family: Roboto;
   font-style: normal;
@@ -85,7 +85,7 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__item {
     margin-bottom: 30px;
     &:last-child {
@@ -98,6 +98,14 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .portfolio__item {
+    &:nth-child(-n + 6) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(n + 7) {
+      margin-bottom: 94px;
+    }
+  }
 }
 
 // .portfolio__list {

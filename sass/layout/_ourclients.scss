@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .ourclients__list {
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +60,26 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .ourclients__list {
+    display: flex;
+    padding-bottom: 94px;
+  }
+
+  .ourclients__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 // .ourclients__icon {

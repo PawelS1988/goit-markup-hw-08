@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
     position: absolute;
     text-align: center;
@@ -94,6 +94,23 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    text-align: none;
+    display: block;
+    flex-direction: none;
+    align-items: none;
+    height: 252px;
+  }
+
+  .footer-logo {
+    padding-top: 60px;
+    display: inline-block;
+  }
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
 }
 
 // .footer {
